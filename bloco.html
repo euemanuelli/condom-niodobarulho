@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastrar Bloco</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background-color: #f4f8fc;
+      margin: 0;
+      padding: 0;
+    }
+
+    main {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #005fa3;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    button {
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back-link:hover {
+      color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h2>Cadastrar Bloco</h2>
+    <form action="/blocos/cadastrar" method="POST">
+      <label for="numero">Número do Bloco:</label>
+      <input type="number" id="numero" name="numero" required>
+
+      <label for="nome">Nome do Bloco:</label>1
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="descricao">Descrição:</label>
+      <textarea id="descricao" name="descricao" rows="4" placeholder="Ex: Bloco próximo à entrada principal, com 12 apartamentos."></textarea>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+    <a class="back-link" href="/">← Voltar ao menu principal</a>
+  </main>
+</body>
+</html>
