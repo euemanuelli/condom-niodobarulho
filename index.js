@@ -57,6 +57,11 @@ app.post('/blocos/cadastrar', (req, res) => {
     });
 });
 
+app.get('/blocos',   (req, res) => {
+         res.sendFile(__dirname + '/blocos.html')
+}
+);
+
 // Apartamentos
 app.get('/apartamentos', (req, res) => {
     res.send(`
